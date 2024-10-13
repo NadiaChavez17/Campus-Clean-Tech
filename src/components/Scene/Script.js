@@ -1,12 +1,13 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 
 //Global variables
 let currentRef = null;
 
 //Scene, camera, renderer
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(25, 100 / 100, 0.1, 100);
+const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
 scene.add(camera);
 camera.position.set(5, 5, 5);
 camera.lookAt(new THREE.Vector3());
@@ -34,12 +35,26 @@ const animate = () => {
 };
 animate();
 
-//cube
-const cube = new THREE.Mesh(
-  new THREE.BoxBufferGeometry(1, 1, 1),
-  new THREE.MeshBasicMaterial()
-);
-scene.add(cube);
+//load model 3D
+const gltfFLoader = new GLTFLoader()
+gltfFLoader.load('./model/Estructura Contenedores (1).glb',
+  (gltf)=> {
+    scene.add(gltf.scene)
+  },
+  ()=>{
+    console.log("Progress")
+  },
+  ()=>{
+    console.log("Error")
+  }
+)
+
+const light1 = new THREE.DirectionalLight(0xffffff,1)
+light1.position.set(6,6,6)
+scene.add(light1)
+
+const al = new THREE.AmbientLight(0xffffff,1)
+scene.add(al)
 
 //Init and mount the scene
 export const initScene = (mountRef) => {

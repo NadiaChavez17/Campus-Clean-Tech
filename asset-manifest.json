@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Campus-Clean-Tech/static/css/main.c7ec3132.css",
-    "main.js": "/Campus-Clean-Tech/static/js/main.46a084e4.js",
+    "main.js": "/Campus-Clean-Tech/static/js/main.09e9552a.js",
     "index.html": "/Campus-Clean-Tech/index.html",
     "main.c7ec3132.css.map": "/Campus-Clean-Tech/static/css/main.c7ec3132.css.map",
-    "main.46a084e4.js.map": "/Campus-Clean-Tech/static/js/main.46a084e4.js.map"
+    "main.09e9552a.js.map": "/Campus-Clean-Tech/static/js/main.09e9552a.js.map"
   },
   "entrypoints": [
     "static/css/main.c7ec3132.css",
-    "static/js/main.46a084e4.js"
+    "static/js/main.09e9552a.js"
   ]
 }

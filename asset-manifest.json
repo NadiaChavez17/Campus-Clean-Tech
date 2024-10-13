@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Campus-Clean-Tech/static/css/main.c7ec3132.css",
+    "main.js": "/Campus-Clean-Tech/static/js/main.2760e099.js",
+    "index.html": "/Campus-Clean-Tech/index.html",
+    "main.c7ec3132.css.map": "/Campus-Clean-Tech/static/css/main.c7ec3132.css.map",
+    "main.2760e099.js.map": "/Campus-Clean-Tech/static/js/main.2760e099.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7ec3132.css",
+    "static/js/main.2760e099.js"
+  ]
+}
